@@ -591,9 +591,9 @@ configure:6638: $? = 0
 configure:6650: result: yes
 configure:6664: checking for fseek64
 configure:6721: afl-clang-fast -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/conftest-8b9178.o: in function `main':
+/usr/bin/ld: /tmp/conftest-7f4f0b.o: in function `main':
 conftest.c:(.text.main[main]+0x35): undefined reference to `fseek64'
-/usr/bin/ld: /tmp/conftest-8b9178.o:(.data+0x0): undefined reference to `fseek64'
+/usr/bin/ld: /tmp/conftest-7f4f0b.o:(.data+0x0): undefined reference to `fseek64'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:6727: $? = 1
 configure: failed program was:
@@ -663,9 +663,9 @@ configure: failed program was:
 configure:6752: result: no
 configure:6768: checking for ftell64
 configure:6825: afl-clang-fast -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/conftest-735670.o: in function `main':
+/usr/bin/ld: /tmp/conftest-58d2b0.o: in function `main':
 conftest.c:(.text.main[main]+0x35): undefined reference to `ftell64'
-/usr/bin/ld: /tmp/conftest-735670.o:(.data+0x0): undefined reference to `ftell64'
+/usr/bin/ld: /tmp/conftest-58d2b0.o:(.data+0x0): undefined reference to `ftell64'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:6831: $? = 1
 configure: failed program was:
@@ -1053,6 +1053,7 @@ config.status:686: creating fofi/Makefile
 config.status:686: creating splash/Makefile
 config.status:686: creating xpdf/Makefile
 config.status:790: creating aconf.h
+config.status:888: aconf.h is unchanged
 configure:11790: WARNING: Couldn't find X
 configure:11794: WARNING: Couldn't find Motif
 configure:11798: WARNING: Couldn't find FreeType
