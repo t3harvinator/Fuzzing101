@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/stones/LocalFuzzingInstalls/bin/exif
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=/home/stones/Desktop/Fuzzing101/Exercise_2/out/default
+# command line:
+'afl-fuzz' '-i' '/home/stones/Desktop/Fuzzing101/Exercise_2/sample_jpegs' '-o' '/home/stones/Desktop/Fuzzing101/Exercise_2/out' '-s' '123' '--' '/home/stones/LocalFuzzingInstalls/bin/exif' '@@'
